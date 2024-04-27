@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Add</button>
+    <div>
+      <!-- <p>task</p>
+      <button>edite</button>
+      <button>reset</button> -->
+    </div>
+
+    <script>
+      const addButton = document.querySelector('button');
+      const taskContainer = document.querySelector('div');
+      console.log(addButton);
+      console.log(taskContainer);
+
+      addButton.addEventListener('click', () => {
+        const text = document.createElement('p');
+        text.innerHTML = 'tesk';
+        const editeButton = document.createElement('button');
+        editeButton.innerHTML = 'Edite';
+        taskContainer.append(text);
+        taskContainer.append(editeButton);
+      });
+    </script>
+  </body>
+</html>
